@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+<title>A Pong Game in JavaScript</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="pong.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<h1>Pong</h1>
+<body onload="initialize();" onmousemove="movePaddle(event);">
+	<form> 
+		<label>Slow<input 
+			type="radio" id="level1" name="speed" value="0" checked="checked" onclick="setSpeed(0);"></label> 
+		<label>Medium<input
+			type="radio" name="speed" value="1" onclick="setSpeed(1);"></label> 
+		<label>Fast<input
+			type="radio" name="speed" value="2" onclick="setSpeed(2);"></label> 
+			
+		<input type="button" value="Reset" onclick="resetCounter();"> 
+		<label>Computer Score:
+			<span id="message">0</span>
+		</label> <br><br>*Click inside the court to start the game*<br><br>
+		<div id="court" onclick="startGame(event);">
+			<img id="ball" src="resources/ball.gif">
+			<img id="paddle" src="resources/paddle.gif">
+		</div>
+	</form>
+
+</body>
+</html>
