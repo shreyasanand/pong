@@ -1,0 +1,31 @@
+h1 {
+text-align: left;
+font-family: Papyrus;
+}
+
+body {
+background-color:#AEAAA5;
+}
+
+#court {
+background-color:white;
+border: solid black;
+cursor: none;
+width: 1100px;
+height: 500px;
+}
+
+#ball {
+margin: 0; 
+padding: 0px; 
+position: relative;
+left: 0px; 
+top: -50px;
+}
+
+#paddle {
+margin: 0; 
+padding: 0; 
+position: relative; 
+left: 1000px;
+}
